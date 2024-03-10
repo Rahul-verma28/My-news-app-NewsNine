@@ -2,6 +2,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+<!-- echo "# My-news-app-NewsNine" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rahul-verma28/My-news-app-NewsNine.git
+git push -u origin main -->
+
+
+<!-- git remote add origin https://github.com/Rahul-verma28/My-news-app-NewsNine.git
+git branch -M main
+git push -u origin main -->
+
+
 First, run the development server:
 
 ```bash
