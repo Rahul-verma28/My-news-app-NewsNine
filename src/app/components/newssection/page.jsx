@@ -6,7 +6,7 @@ export default function Newsection() {
   const [allnews, setAllnews] = useState([]);
 
   useEffect(() => {
-    const url = `https://newsapi.org/v2/top-headlines?country=in&pageSize=80&apiKey=bf3aa761613547dc8fdc2056e11b3fc6`;
+    const url = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=bf3aa761613547dc8fdc2056e11b3fc6";
 
     async function fetchData() {
       try {
