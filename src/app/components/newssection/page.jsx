@@ -2,11 +2,13 @@
 
 import React, {useState, useEffect } from "react";
 
-export default function Newsection() {
+export default function Newsection( {api}) {
   const [allnews, setAllnews] = useState([]);
 
   useEffect(() => {
-    const url = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=bf3aa761613547dc8fdc2056e11b3fc6";
+    // const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${api}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=in&category=general&pageSize=80&apiKey=${api}`;
+
 
     async function fetchData() {
       try {
@@ -32,7 +34,7 @@ export default function Newsection() {
       {allnews.map((article) => (
         <div key={article.title}>
           <h2 className="font-bold">{article.title}</h2>
-          {/* <p>{article.description}</p> */}
+          <p>{article.description}</p>
         </div>
       ))}
     </div>
