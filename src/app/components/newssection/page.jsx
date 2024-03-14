@@ -13,9 +13,9 @@ export default function Newsection( {api}) {
     async function fetchData() {
       try {
         const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
+        // if (!response.ok) {
+        //   throw new Error("Network response was not ok");
+        // }
         const data = await response.json();
         setAllnews(data.articles);
         console.log(data);
@@ -25,7 +25,7 @@ export default function Newsection( {api}) {
     }
 
     fetchData();
-  }, []);
+  }, [api]);
   
 
   return (
